@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select2</title>
+</head>
+<body>
+ <div id="wrap">
+        <header>
+            <div class="container">
+                <img src='static/dingdongKor.png' alt=딩동로고 height=40px>
+            </div>
+            <br>
+        </header>
+
+        <section>
+            <div class="container">
+                <form action="{% url 'checkLoading'%}" method="POST">
+                    {% csrf_token %}
+                    
+                    <p><b>투약중인 약을 선택해주세요.</b></p>
+                    <p>중복 체크 가능</p>
+                    <div class="mediCheck" id="mediCheck">
+                        <br>
+                        <br>
+                        <article>
+                        <p><input type="checkbox" name="mediCheckBox" value="heart" id="canCheck1" onclick="checkAll()" >심장 사상충</p>
+                        <p>투약 일자를 선택해주세요.</p>
+                        <input type="date" name="heartDate" id="calander">
+                        <br>
+            
+                        <p>Ex)</p>
+                        <img src='static/레볼루션.png' alt=레볼루션 height=60px>
+                        <p>레볼루션</p>
+                        <img src='static/애드보킷.png' alt=애드보킷 height=60px>
+                        <p>애드보킷</p>
+                        <img src='static/하트가드.png' alt=하트가드 height=60px>
+                        <p>하트가드</p>
+                        <img src='static/넥스가드 스펙트라.png' alt=넥스가드 스펙트라 height=60px>
+                        <p>넥스가드 스펙트라</p>
+                        <img src='static/엔젤하트.png' alt=엔젤하트 height=60px>
+                        <p>엔젤하트</p>
+                        <img src='static/하트캅.png' alt=하트캅 height=60px>
+                        <p>하트캅</p>
+                        <img src='static/하트세이버.png' alt=하트세이버 height=60px>
+                        <p>하트세이버</p>
+                        <img src='static/다이로하트.png' alt=다이로하트 height=60px>
+                        <p>다이로하트</p>
+                        </article> 
+                      
+                        <article> 
+                        <p><input type="checkbox" name="mediCheckBox" value="helminthic" id="canCheck2" onclick="checkAll2()">구 충 제</p>
+                        <p>투약 일자를 선택해주세요.</p>
+                        <input type="date" name="helminthicDate" id="calander2" >
+                        <br>
+                        
+                        <p>Ex)</p>
+                        <img src='static/파나쿠어.png' alt=파나쿠어 height=60px>
+                        <p>파나쿠어</p>
+                        <img src='static/드론탈플러스.png' alt=드론탈플러스 height=60px>
+                        <p>드론탈플러스</p> 
+                        <img src='static/안텔민.png' alt=안텔민 height=60px>
+                        <p>안텔민</p>
+                        <img src='static/파라캅.png' alt=파라캅 height=60px>
+                        <p>파라캅</p>
+                        <img src='static/프라벤.png' alt=프라벤 height=60px>
+                        <p>프라벤</p>
+                        </article>  
+                          
+                          
+
+                        <p><input type="checkbox" name="mediCheckBox" value="noValue" id="nope" onclick="nonClick()">없 음</p>
+                        <br>
+                        <input type="submit" value="다음 단계로 가기">
+                        <br>
+                        
+                        <input type="button" value="체크박스 값 확인" >
+                        <input type="hidden" name="dogInfo" value="{{dogInfo}}">
+                    </div>
+                </form>
+            </div>
+        </section>
+  </div>
+</body>
+</html>
