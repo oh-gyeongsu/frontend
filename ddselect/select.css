@@ -56,28 +56,3 @@ body {
   border: 1px solid #1279ff;
   border-radius: 20px;
 }
-
-/* 화면 너비 0 ~ 1200px */
-@media (max-width: 1220px) {
-  #wrap {
-    width: 100%;
-  }
-}
-
-/* 화면 너비 0 ~ 768px */
-@media (max-width: 768px) {
-  #wrap {
-    width: 100%;
-  }
-}
-
-/* 화면 너비 0 ~ 480px */
-@media (max-width: 480px) {
-  #wrap {
-    width: 100%;
-  }
-
-  .container {
-    width: 100%;
-  }
-}
