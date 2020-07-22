@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+}
+
+.box1 {
+  width: 140px;
+  height: 35px;
+  color: #4f4f4f;
+  background-color: white;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+}
+
+.box2 {
+  width: 95px;
+  height: 35px;
+  color: #4f4f4f;
+  background-color: white;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+}
+
+.box2:visited {
+  width: 95px;
+  height: 35px;
+  color: #1279ff;
+  background-color: white;
+  border: 1px solid #1279ff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.box3 {
+  width: 140px;
+  height: 35px;
+  color: #4f4f4f;
+  background-color: white;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+}
+
+.box4 {
+  width: 120px;
+  height: 40px;
+  color: white;
+  background-color: #1279ff;
+  border: 1px solid #1279ff;
+  border-radius: 20px;
+}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+  #wrap {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
