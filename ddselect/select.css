@@ -3,12 +3,21 @@
   padding: 0;
 }
 
+.logoimg {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: white;
+}
+
+.container {
+  margin: 0 auto;
 }
 
 .box1 {
@@ -18,6 +27,7 @@ body {
   background-color: white;
   border: 1px solid #4f4f4f;
   border-radius: 10px;
+  text-align: center;
 }
 
 .box2 {
