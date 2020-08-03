@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.logoimg {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -11,13 +16,18 @@ body {
   background: white;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 .box1 {
   width: 140px;
   height: 35px;
   color: #4f4f4f;
   background-color: white;
-  border: 1px solid #4f4f4f;
+  border: 1px solid #191f28;
   border-radius: 10px;
+  text-align: center;
 }
 
 .box2 {
@@ -25,8 +35,9 @@ body {
   height: 35px;
   color: #4f4f4f;
   background-color: white;
-  border: 1px solid #4f4f4f;
+  border: 1px solid white;
   border-radius: 10px;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 .box2:visited {
@@ -44,7 +55,7 @@ body {
   height: 35px;
   color: #4f4f4f;
   background-color: white;
-  border: 1px solid #4f4f4f;
+  border: 1px solid #191f28;
   border-radius: 10px;
 }
 
@@ -55,4 +66,10 @@ body {
   background-color: #1279ff;
   border: 1px solid #1279ff;
   border-radius: 20px;
+}
+
+.fa-angle-right {
+  color: white;
+  position: relative;
+  right: 20px;
 }

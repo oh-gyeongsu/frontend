@@ -1,39 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: white;
-  }
-  
-  .box1{
-    width: 240px;
-    height: 50px;
-    background: #FFFFFF;
-    border: 1px solid #0099FF;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding-left: 10px;
-  }
-  
-  .box2{
-    width: 240px;
-    height: 35px;
-    border: 1px solid #1279FF;
-    background: #1279FF;
-    border-radius: 5px;
-    color: white;
-    
-  }
-  
-  .box3{
-    width: 240px;
-    height: 35px;
-    border: 1px solid #FEE500;
-    background: #FEE500;
-    border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.logoimg {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+}
+
+.box1 {
+  width: 240px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #0099ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+
+.box2 {
+  width: 240px;
+  height: 35px;
+  border: 1px solid #1279ff;
+  background: #1279ff;
+  border-radius: 5px;
+  color: white;
+}
+
+.box3 {
+  width: 240px;
+  height: 35px;
+  border: 1px solid #fee500;
+  background: #fee500;
+  border-radius: 5px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fa-user {
+  color: #0099ff;
+  position: relative;
+  right: 230px;
+}
+
+.fa-unlock {
+  color: #0099ff;
+  position: relative;
+  right: 230px;
+}
+
+.fa-comment {
+  color: #000000;
+  position: relative;
+  right: 60px;
+}

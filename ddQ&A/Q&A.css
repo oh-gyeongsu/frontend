@@ -20,12 +20,8 @@ body {
   margin: 0 auto;
 }
 
-p {
-  font-size: 12px;
-}
-
 @media (max-width: 375px) {
   .poster {
-    width: 90%;
+    width: 85%;
   }
 }
