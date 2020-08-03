@@ -15,17 +15,27 @@ body {
   text-align: center;
 }
 
-#wrap {
-  width: 1440px;
-  margin: 0 auto;
+.box {
+  text-align: left;
 }
 
-p {
+span {
+  color: red;
+}
+
+.type {
+  width: 60px;
+  background: #ffffff;
+  border: 0.3px solid #000000;
+  border-radius: 30px;
   font-size: 12px;
+  text-align: center;
+  float: right;
 }
 
 @media (max-width: 375px) {
-  .poster {
-    width: 90%;
+  body {
+    padding-left: 6%;
+    padding-right: 6%;
   }
 }

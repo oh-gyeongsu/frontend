@@ -3,52 +3,25 @@
   padding: 0;
 }
 
+.logoimg {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  text-align: center;
   background: white;
-  font-size: 20px;
 }
 
 .container {
-  position: relative;
-  width: 640px;
-  height: 1000px;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  flex-direction: column;
-  border-color: black;
-  /* box-shadow: 0 20px 30px rgba(0,0,0,.2); */
+  width: 360px;
+  margin: 0 auto;
 }
 
-.mainImage {
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 640px;
-}
-
-.container .title {
-  font-size: 20px;
-  position: relative;
-  font-weight: bold;
-}
-
-#form {
-  padding: 20px;
-  width: 480px;
-}
-
-#form .userBox {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-#form .userBox .formBox {
+#form .formBox {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -56,60 +29,46 @@ body {
 }
 
 #inputText {
-  width: 340px;
+  width: 70%;
   height: 20px;
-  margin-right: 20px;
   border: none;
   border-bottom: 1px solid #000000;
   padding-bottom: 1px;
-  font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #inputText::placeholder {
   color: A9A9A9;
 }
 
-#form .userBox .pwBox {
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-family: Helvetica Neue;
-}
-
 #inputPW {
-  width: 340px;
+  width: 70%;
   height: 20px;
-  margin-right: 20px;
   border: none;
   border-bottom: 1px solid #000000;
   padding-bottom: 1px;
-  margin-bottom: 30px;
-  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 #checkBox {
   width: 70px;
-  height: 40px;
-  margin-left: 10px;
+  height: 30px;
+  margin-left: 5px;
   background-color: #e5efff;
   color: #1279ff;
   border-radius: 6.7px;
   border-style: hidden;
   font-weight: bold;
-  font-size: 16px;
 }
 
 #checkIcon {
   width: 70px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #selectBox {
-  width: 250px;
+  width: 330px;
   height: 40px;
-  font-size: 16px;
   font-weight: bold;
   border-radius: 6.7px;
   text-align-last: center;
@@ -117,11 +76,33 @@ body {
   color: #1279ff;
 }
 
-.box4 {
+.box1 {
+  width: 330px;
+  height: 150px;
+  background-color: #f0f5f9;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.box2 {
   width: 120px;
   height: 40px;
   color: white;
   background-color: #1279ff;
   border: 1px solid #1279ff;
   border-radius: 20px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+
+  #selectBox {
+    width: 90%;
+  }
+
+  .box1 {
+    width: 90%;
+  }
 }

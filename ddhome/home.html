@@ -9,31 +9,30 @@
 <body>
     <div id="wrap">
         
-        <header id="header1" >
-          <img src='static/dingdongKor.png' alt=딩동로고 height=40px>
+        <header id="header1">
+          <img src='static/dingdongKor.png' alt=딩동로고 height=40px class=logoimg>
         </header>
-        <header id="header2">
-          <p></p>
-        </header>  
+        
         
         <aside>
-          <br>
-          <br>
-          <p>심장사상충, 기생충 약의 다음 투약일을</p> 
-          <p>알려드립니다.</p>
-          <br>
-          <a href="{% url 'select' %}"><input type="button" value="시작하기" class="button"></a>
-          <br>
-          <br>         
-          <a href="{% url 'login' %}"><u>로그인</u></a>
-          <br>
-          <br>
-          <p>투약 기간은 미국 심장사상충 학회 기준을 따르고 있습니다.</p>
-            
+            <div class="item">
+              <p>심장사상충, 기생충 약의 다음 투약일을</p> 
+              <p>알려드립니다.</p>
+              <br>
+              <a href="{% url 'select' %}"><input type="button" value="시작하기" class="button"></a>
+              <br>
+              <br>         
+              <a href="{% url 'login' %}"><u>로그인</u></a>
+              <br>
+              <br>
+              <p>투약 기간은 미국 심장사상충 학회 기준을 따르고 있습니다.</p> 
+            </div>  
         </aside>
         <section>
-            <img src='static/Rectangle 45.png' alt=홈화면이미지 height=100%>
+            <img src='static/Rectangle 45.png' alt=홈화면이미지 class=dogimg>
         </section>
+        
+
         <footer></footer>
 </body>
 </html>
